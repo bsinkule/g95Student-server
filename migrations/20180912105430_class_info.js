@@ -6,11 +6,11 @@ exports.up = function (knex, Promise) {
         table.text('lastName').notNullable()
         table.text('hometown').notNullable()
         table.text('prevOccupation').notNullable()
-        table.integer('favoriteNum').notNullable()
+        table.float('favoriteNum')
         table.text('pastime').notNullable()
         })
     }
 
-    exports.down = function (knex, Promise) {
-        return knex.schema.dropTable('g95')
-    }
+exports.down = function (knex, Promise) {
+    return knex.schema.dropTable('g95')
+}

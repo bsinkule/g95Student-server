@@ -13,8 +13,8 @@ router.get('/', (req, res) => {
         })
 })
 
-router.get('/:id', (req, res) => {
-    queries.getOne(req.params.id) 
+router.get('/:firstName', (req, res) => {
+    queries.getOne(req.params.firstName) 
         .then(oneStudent => {
             res.json({
                 student: oneStudent[0] 

@@ -84,7 +84,7 @@ module.exports = [
     lastName: 'Pease', 
     hometown: 'Denver', 
     prevOccupation: 'Boss', 
-    favoriteNum: 34, 
+    favoriteNum: 34.5, 
     pastime: 'Being Bald'
     }, 
     {
