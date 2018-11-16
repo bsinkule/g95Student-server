@@ -4,10 +4,7 @@ exports.up = function (knex, Promise) {
         table.increments()
         table.text('firstName').notNullable()
         table.text('lastName').notNullable()
-        table.text('hometown').notNullable()
-        table.text('prevOccupation').notNullable()
-        table.float('favoriteNum')
-        table.text('pastime').notNullable()
+        table.text('imgUrl').notNullable()
         })
     }
 
